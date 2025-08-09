@@ -1,13 +1,13 @@
 #include <HardwareSerial.h>     // Reference the ESP32 built-in serial port library
-#include "WS_MQTT.h"
-#include "WS_Bluetooth.h"
+// #include "WS_MQTT.h"
+// #include "WS_Bluetooth.h"
 #include "WS_GPIO.h"
-// #include "WS_Serial.h"
+#include "WS_Serial.h"
 // #include "WS_RTC.h"
 #include "WS_GPIO.h"
-#include "WS_DIN.h"
+// #include "WS_DIN.h"
 // #include "WS_SD.h"
-#include "WS_ETH.h"
+// #include "WS_ETH.h"
 
 
 uint32_t Simulated_time=0;      // Analog time counting
@@ -32,5 +32,6 @@ void setup() {
 
 /**********************************************************  While  **********************************************************/
 void loop() {
-
+// CAN_Loop();
+// vTaskDelay(pdMS_TO_TICKS(50));
 }

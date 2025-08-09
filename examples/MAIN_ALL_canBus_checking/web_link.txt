@@ -1,0 +1,5 @@
+https://waveshare.cloud/#/debug
+https://www.waveshare.com/wiki/ESP32-S3-Relay-6CH-Program_modification
+https://www.waveshare.com/wiki/Using_Modbus_RTU_Relay_with_Homeassistant
+https://www.waveshare.com/wiki/ESP32-S3-ETH-8DI-8RO-C#Introduction
+https://www.waveshare.com/wiki/ESP32-S3-POE-ETH-8DI-8RO-Waveshare_Cloud#Software_Operation

@@ -1,6 +1,6 @@
 #include "WS_CAN.h"
 
-static bool driver_installed = true;
+static bool driver_installed = false;
 
 void CAN_Init(void)
 {                                // Initializing serial port
@@ -197,22 +197,25 @@ void CAN_Loop(void)
     }
 
     // Receive messages if any are available
-    // if (alerts_triggered & TWAI_ALERT_RX_DATA) {
+    if (alerts_triggered & TWAI_ALERT_RX_DATA) {
       // One or more messages received. Handle all.
       twai_message_t message;                             // This is the structure used to store the received CAN message.
       while (twai_receive(&message, 0) == ESP_OK) {
         handle_rx_message(message);                       // This function will process the received message.
       }
-    // }
+    }
   }
 }
 
 void CANTask(void *parameter) {
   send_message_Test();
-  uint8_t Data[27]={0x80, 0x2A, 0xC3, 0x58, 0x17, 0x11, 0x4D, 0x3F, 0x3B, 0xCE, 0x0F, 0xFF, 0x79, 0x20, 0xB4, 0x40, 0x5D, 0x29, 0x05, 0x49, 0xE6, 0x12, 0x57, 0x0E, 0x6D, 0xC9, 0xAE};
+  // uint8_t Data[27]={0x80, 0x2A, 0xC3, 0x58, 0x17, 0x11, 0x4D, 0x3F, 0x3B, 0xCE, 0x0F, 0xFF, 0x79, 0x20, 0xB4, 0x40, 0x5D, 0x29, 0x05, 0x49, 0xE6, 0x12, 0x57, 0x0E, 0x6D, 0xC9, 0xAE};
+  // send_message(0x079,Data,27, true); // Sending an extended frame with 27 bytes of data
+  // uint8_t data[8] = {0xDE, 0xAD, 0xBE, 0xEF, 0x01, 0x02, 0x03, 0x04};
+
   while(1){
     CAN_Loop();
-  // send_message(0x079,Data,27, true); // Sending an extended frame with 27 bytes of data
+// send_message(0x123, data, 8, false);  // Standard frame
     vTaskDelay(pdMS_TO_TICKS(50));
   }
   vTaskDelete(NULL);
