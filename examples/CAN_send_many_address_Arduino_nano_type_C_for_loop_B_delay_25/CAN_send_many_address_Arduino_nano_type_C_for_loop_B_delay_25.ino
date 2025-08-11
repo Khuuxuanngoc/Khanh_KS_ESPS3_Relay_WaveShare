@@ -35,10 +35,6 @@ Byte: Data: 02
 Send back the received data!
 
 Message queued for transmission
-Alert: The Transmission was successful.
-
-TX buffered: 0	 
-
 Message is in Standard Format
 
 ID: 5
@@ -48,17 +44,12 @@ Send back the received data!
 
 Message queued for transmission
 Message is in Standard Format
-
 ID: 4
 Byte: Data: 04 
 
 Send back the received data!
 
 Message queued for transmission
-Alert: The Transmission was successful.
-
-TX buffered: 0	 
-
 Message is in Standard Format
 
 ID: 7
@@ -91,10 +82,6 @@ Byte: Data: 08
 Send back the received data!
 
 Message queued for transmission
-Alert: The Transmission was successful.
-
-TX buffered: 0	 
-
 Message is in Standard Format
 
 ID: 11
@@ -111,10 +98,6 @@ Byte: Data: 10
 Send back the received data!
 
 Message queued for transmission
-Alert: The Transmission was successful.
-
-TX buffered: 0	 
-
 Message is in Standard Format
 
 ID: 13
@@ -147,10 +130,6 @@ Byte: Data: 14
 Send back the received data!
 
 Message queued for transmission
-Alert: The Transmission was successful.
-
-TX buffered: 0	 
-
 Message is in Standard Format
 
 ID: 17
@@ -203,10 +182,6 @@ Byte: Data: 20
 Send back the received data!
 
 Message queued for transmission
-Alert: The Transmission was successful.
-
-TX buffered: 0	 
-
 Message is in Standard Format
 
 ID: 23
@@ -223,10 +198,6 @@ Byte: Data: 22
 Send back the received data!
 
 Message queued for transmission
-Alert: The Transmission was successful.
-
-TX buffered: 0	 
-
 Message is in Standard Format
 
 ID: 25
@@ -259,10 +230,6 @@ Byte: Data: 26
 Send back the received data!
 
 Message queued for transmission
-Alert: The Transmission was successful.
-
-TX buffered: 0	 
-
 Message is in Standard Format
 
 ID: 29
@@ -279,10 +246,6 @@ Byte: Data: 28
 Send back the received data!
 
 Message queued for transmission
-Alert: The Transmission was successful.
-
-TX buffered: 0	 
-
 Message is in Standard Format
 
 ID: 30
@@ -294,6 +257,7 @@ Message queued for transmission
 Alert: The Transmission was successful.
 
 TX buffered: 0	 
+ 
 */
 
 
