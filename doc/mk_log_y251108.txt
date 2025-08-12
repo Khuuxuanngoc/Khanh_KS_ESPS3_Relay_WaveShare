@@ -1,0 +1,7 @@
+08/11/2025 trước 4:52 pm
+- dùng 2 arduino nano để truyền ziczac địa chỉ từ 0 tới 30. nếu không delay mỗi lần truyền thì sẽ bị mất đến 15 địa chỉ.
+08/11/2025 4:52 pm
+- stm32f103c8t6 có thể truyền được extended id và esp32s3 có thể hiểu đó là extended id.
+- arduino nano truyền qua mcp2515 thì có thể nhưng esp32s3 không hiểu. Đang fix.
+08/11/2025 5:26 pm
+- fix truyền extended frame trên nano bằng cách or địa chỉ với bit SRR. trên readme của thư viện automwp-mcp2515 có demo-code.

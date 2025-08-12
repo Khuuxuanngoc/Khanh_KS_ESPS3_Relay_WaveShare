@@ -1,0 +1,2 @@
+08/12/2025 01:09 pm
+- stm32 muốn dùng can bus hai chân pa11/pa12 thì không được cắm cổng usb trên board để tránh xung đột.
