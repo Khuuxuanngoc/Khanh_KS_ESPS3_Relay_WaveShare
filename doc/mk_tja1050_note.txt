@@ -1,0 +1,2 @@
+Lưu ý khi dùng tja1050
+Điện áp cấp vcc phải trên 4.75 và dưới 5.25, nếu thấp áp hơn thì không hoạt động được.
