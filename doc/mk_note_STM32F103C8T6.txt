@@ -1,0 +1,13 @@
+Can bus serial
+
+CAN1, main
+
+PA11 -- RX
+PA12 -- TX
+
+CAN1, alter
+
+PB8 -- RX
+PB9 -- TX
+
+Khi kết nối với TJA1050 thì phải qua chuyển mức do TJA1050 dùng logic 5V

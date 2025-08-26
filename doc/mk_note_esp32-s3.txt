@@ -1,0 +1,6 @@
+CAN bus serial 
+
+TX -- 17
+RX -- 18
+
+Khi kết nối với TJA1050 thì phải qua chuyển mức do TJA1050 dùng logic 5V
